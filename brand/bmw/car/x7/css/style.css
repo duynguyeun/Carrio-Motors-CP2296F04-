@@ -174,11 +174,11 @@ header .ghost {
     flex-wrap: wrap;
     width: 1520px;
     height: 627px;
-    background-image: url("/brand/bmw/car/x1/image/x1.jpg");
+    background-image: url("/brand/bmw/car/x7/image/x7.jpg");
 }
 
 .detail .main-pic p {
-    color: white;
+    color: black;
 }
 
 .detail .main-pic .name {

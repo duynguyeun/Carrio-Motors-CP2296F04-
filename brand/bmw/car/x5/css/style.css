@@ -174,7 +174,7 @@ header .ghost {
     flex-wrap: wrap;
     width: 1520px;
     height: 627px;
-    background-image: url("/brand/bmw/car/x1/image/x1.jpg");
+    background-image: url("/brand/bmw/car/x5/image/x5.jpg");
 }
 
 .detail .main-pic p {
@@ -197,6 +197,7 @@ header .ghost {
 .detail .main-pic .price-tag,
 .detail .main-pic .fuel-type {
     font-size: 20px;
+    text-shadow: black 2px 2px 3px;
 }
 
 .detail .main-pic .price-tag #minor-1,
