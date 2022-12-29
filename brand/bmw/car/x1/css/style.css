@@ -15,7 +15,6 @@
     text-decoration: none;
     outline: none;
     border: none;
-    text-transform: capitalize;
     transition: all .2s linear;
 }
 
@@ -26,12 +25,12 @@ html {
     scroll-behavior: smooth;
 }
 
-.footer {
-    padding: 2rem 9%;
-}
-
 section:nth-child(even) {
     background: #eee;
+}
+
+section:not(.detail) {
+    padding: 2rem 9%;
 }
 
 .sub-heading {
@@ -154,6 +153,10 @@ header .ghost {
     margin-top: 1.5rem;
 }
 
+.footer {
+    text-transform: capitalize;
+}
+
 .footer .credit span {
     color: var(--green);
 }
@@ -209,23 +212,50 @@ header .ghost {
 .detail .main-pic .ghost-name {
     flex: 50%;
     text-align: right;
+    visibility: hidden;
 }
 
-.detail .main-pic .price-tag {
+.detail .main-pic .minor-info .fuel-type {
+    margin-right: 1000px;
+}
+
+.detail .main-pic .minor-info {
     flex: 50%;
     margin-left: 30px;
     margin-top: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.detail .main-pic .fuel-type {
+.major-info .info {
+    display: flex;
+    flex-direction: column;
     text-align: left;
-    margin-right: 700px;
-    bottom: 50px;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.detail {
-    padding-bottom: 2rem;
+.major-info .info .info-text {
+    font-size: 20px;
 }
+
+.major-info .info .info-tech {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#til {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.info-iner {
+    text-align: left;
+}
+
 
 /*btn scrollToTop*/
 #btnScrollToTop {
