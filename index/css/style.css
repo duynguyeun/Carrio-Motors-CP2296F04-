@@ -130,6 +130,15 @@ header .navbar {
     align-items: center;
 }
 
+header .navbar .visitcount {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    font-size: 1.7rem;
+    margin-left: auto;
+    color: var(--light-color);
+}
 
 
 header .navbar a.active,
