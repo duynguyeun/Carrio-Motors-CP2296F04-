@@ -84,3 +84,31 @@ btnScrollToTop.addEventListener("click", function () {
     behavior: "smooth"
   });
 });
+const visitCount =
+{
+    show: function()
+    {
+        var count = Number(localStorage.getItem('visitCount'));
+        if (count == null)
+        {
+            count = 1;
+            localStorage.setItem('visitCount', count);
+        }
+        else
+        {
+            count += 1;
+            localStorage.setItem('visitCount', count);
+        }
+        document.getElementById('visitCount').innerText = count;
+    },
+    setCount: function(count)
+    {
+        localStorage.setItem('visitCount', count);
+        document.getElementById('visitCount').innerText = count;
+    },
+    delete: function()
+    {
+        localStorage.removeItem('visitCount');
+    }
+}
+visitCount.show();
