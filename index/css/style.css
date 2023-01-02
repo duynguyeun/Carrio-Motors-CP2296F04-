@@ -281,11 +281,13 @@ header .navbar .drop-navbar:hover .drop-content {
 
 .dishes .box-container .box .stars {
     padding: 1rem 0;
+    visibility: hidden;
 }
 
 .dishes .box-container .box .stars i {
     font-size: 1.7rem;
     color: var(--green);
+    visibility: hidden;
 }
 
 .dishes .box-container .box span {
