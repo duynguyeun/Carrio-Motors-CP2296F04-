@@ -174,7 +174,7 @@ header .ghost {
     flex-wrap: wrap;
     width: 1520px;
     height: 627px;
-    background-image: url("/brand/audi/car/a5-cabriolet/image/a5-cabriolet.jpg");
+    background-image: url("/brand/mg/car/mg3/image/mg3.jpg");
 }
 
 .detail .main-pic p {
@@ -186,6 +186,7 @@ header .ghost {
     margin-top: 124px;
     margin-left: 61px;
     font-size: 40px;
+    text-shadow: black 0px 0px 2px, black 0px 0px 2px;
 }
 
 .detail .main-pic .ghost-name {
