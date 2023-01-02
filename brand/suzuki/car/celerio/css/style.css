@@ -186,6 +186,7 @@ header .ghost {
     margin-top: 124px;
     margin-left: 61px;
     font-size: 40px;
+    text-shadow: black 0px 0px 2px, black 0px 0px 2px;
 }
 
 .detail .main-pic .ghost-name {
