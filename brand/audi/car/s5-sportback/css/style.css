@@ -174,7 +174,7 @@ header .ghost {
     flex-wrap: wrap;
     width: 1520px;
     height: 627px;
-    background-image: url("/brand/audi/car/s5-sportback/image/s5-sportback.jpg");
+    background-image: url("../image/s5-sportback.jpg");
 }
 
 .detail .main-pic p {
@@ -259,25 +259,3 @@ header .ghost {
 
 
 /*btn scrollToTop*/
-#btnScrollToTop {
-    position: fixed;
-    right: 10px;
-    bottom: 10px;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    background-color: #DD0004;
-    box-shadow: 0 0 10px black;
-    color: white;
-    outline: none;
-    cursor: pointer;
-}
-
-#btnScrollToTop img {
-    max-width: 20px;
-    height: auto;
-}
-
-#btnScrollToTop:active {
-    background: #c41b2cec;
-}
