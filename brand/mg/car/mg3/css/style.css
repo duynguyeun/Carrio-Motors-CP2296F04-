@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root {
+    --green: #27ae60;
+    --black: #192a56;
+    --light-color: #666;
+    --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+}
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    transition: all .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+
+section:nth-child(even) {
+    background: #eee;
+}
+
+section:not(.detail) {
+    padding: 2rem 9%;
+}
+
+.sub-heading {
+    text-align: center;
+    color: var(--green);
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+
+.heading {
+    text-align: center;
+    color: var(--black);
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 9em;
+    background: #fff;
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+    justify-content: center;
+}
+
+header .header-logo {
+    margin-right: auto;
+}
+
+header .header-logo .iner-header-logo {
+    display: flex;
+    flex-direction: row;
+    padding: 0%;
+    justify-content: space-between;
+    cursor: pointer;
+    align-items: center;
+}
+
+header .header-logo .iner-header-logo img {
+    height: 68px;
+    width: 68px;
+    padding: 0%;
+}
+
+header .header-logo .iner-header-logo h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: gray;
+}
+
+header .ghost .header-logo {
+    display: flex;
+    flex-direction: row;
+    padding: 0%;
+    justify-content: space-between;
+    cursor: pointer;
+    align-items: center;
+}
+
+header .ghost .header-logo img {
+    height: 68px;
+    width: 68px;
+    padding: 0%;
+}
+
+header .ghost .header-logo h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: gray;
+}
+
+header .sublogo img {
+    max-height: 70px;
+    width: auto;
+}
+
+header .ghost {
+    margin-left: auto;
+    visibility: hidden;
+}
+
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+    padding: .5rem 0;
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+.footer .box-container .box a {
+    display: block;
+    padding: .5rem 0;
+    font-size: 1.5rem;
+    color: var(--light-color);
+}
+
+.footer .box-container .box a:hover {
+    color: var(--green);
+    text-decoration: underline;
+}
+
+.footer .credit {
+    text-align: center;
+    border-top: .1rem solid rgba(0, 0, 0, .1);
+    font-size: 2rem;
+    color: var(--black);
+    padding: .5rem;
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.footer {
+    text-transform: capitalize;
+}
+
+.footer .credit span {
+    color: var(--green);
+}
+
+/*menu section*/
+
+.detail {
+    padding-top: 10em;
+    padding-bottom: 20px;
+    background-color: rgb(298, 298, 298);
+}
+
+.detail .main-pic {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1520px;
+    height: 627px;
+    background-image: url("../image/mg3.jpg");
+}
+
+.detail .main-pic p {
+    color: white;
+}
+
+.detail .main-pic .name {
+    padding: 5px;
+    margin-top: 124px;
+    margin-left: 61px;
+    font-size: 40px;
+    text-shadow: black 0px 0px 2px, black 0px 0px 2px;
+}
+
+.detail .main-pic .ghost-name {
+    margin-right: 61px;
+    font-size: 40px;
+    margin-top: 124px;
+}
+
+.detail .main-pic .price-tag,
+.detail .main-pic .fuel-type {
+    font-size: 20px;
+    text-shadow: black 0px 0px 2px;
+}
+
+.detail .main-pic .price-tag #minor-1,
+.detail .main-pic .fuel-type #minor-2 {
+    font-size: 15px;
+}
+
+.detail .main-pic .name {
+    flex: 50%;
+    margin-left: 50px;
+}
+
+.detail .main-pic .ghost-name {
+    flex: 50%;
+    text-align: right;
+    visibility: hidden;
+}
+
+.detail .main-pic .minor-info .fuel-type {
+    margin-right: 1000px;
+}
+
+.detail .main-pic .minor-info {
+    flex: 50%;
+    margin-left: 30px;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.major-info .info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.major-info .info .info-text {
+    font-size: 20px;
+}
+
+.major-info .info .info-tech {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#til {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.info-iner {
+    text-align: left;
+}
+
+
+/*btn scrollToTop*/
